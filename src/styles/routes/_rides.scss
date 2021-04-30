@@ -1,0 +1,17 @@
+.rides {
+  @include mobile-down {
+    .timezones-buttons {
+      padding-left: 15px!important;
+      padding-right: 15px!important;
+    }
+    .react-datepicker__input-container {
+      width: 100%;
+    }
+    .payment-menu {
+      margin-top: 15px;
+    }
+  }
+  .react-datepicker__input-container {
+    display: block;
+  }
+}

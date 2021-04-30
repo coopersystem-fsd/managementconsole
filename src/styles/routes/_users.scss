@@ -1,0 +1,44 @@
+.users {
+  .user-picture-wrapper {
+    height: 100px;
+    position: relative;
+    &.loading {
+      .user-picture {
+        opacity: 0;
+      }
+    }
+    &.error {
+      .user-picture {
+        opacity: 0;
+      }
+    }
+    .placeholder {
+      position: absolute;
+      font-size: 35px;
+      left: calc(50% - 19px);
+      top: calc(50% - 19px);
+      color: #cccccc;
+    }
+    .user-picture {
+      position: relative;
+      z-index: 2;
+      max-width: 100px;
+      width: 100px;
+      height: 100px;
+      -webkit-transition: opacity 0.3s ease-in;
+      -moz-transition: opacity 0.3s ease-in;
+      -o-transition: opacity 0.3s ease-in;
+      -ms-transition: opacity 0.3s ease-in;
+      transition: opacity 0.3s ease-in;
+    }
+  }
+
+  .filters {
+    label {
+      display: block;
+    }
+    select {
+      width: 100%;
+    }
+  }
+}

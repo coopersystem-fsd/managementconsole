@@ -1,0 +1,25 @@
+.edit-user {
+  .license {
+    height: 293px;
+  }
+  .car-photos {
+    height: 215px;
+    img {
+      height: 120px;
+    }
+  }
+  .hidden-file {
+   width: 0px;
+   height: 0px;
+   overflow: hidden;
+  }
+  .driverThumbnail {
+    height: 250px;
+    width: auto;
+    text-align: center;
+    img {
+      height: 150px;
+    }
+  }
+
+}

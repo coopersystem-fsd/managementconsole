@@ -1,0 +1,51 @@
+[
+  {
+    "id": 6892,
+    "documentType": "FRONT",
+    "documentStatus": "APPROVED",
+    "documentUrl": "http://media-stage.rideaustin.com/car-photos/78a0fa9c-dc17-4b5b-a822-5c7ad95f90b1.png",
+    "name": "",
+    "removed": false
+  },
+  {
+    "id": 7144,
+    "documentType": "BACK",
+    "documentStatus": "APPROVED",
+    "documentUrl": "http://media-stage.rideaustin.com/car-photos/e8b01b8f-c01b-431f-b9c6-619ee87e3830.png",
+    "name": "",
+    "removed": false
+  },
+  {
+    "id": 7401,
+    "documentType": "INSIDE",
+    "documentStatus": "APPROVED",
+    "documentUrl": "http://media-stage.rideaustin.com/car-photos/ac7b9589-a83e-4d17-9a01-e9bb9082cd38.png",
+    "name": "",
+    "removed": false
+  },
+  {
+    "id": 7658,
+    "documentType": "TRUNK",
+    "documentStatus": "APPROVED",
+    "documentUrl": "http://media-stage.rideaustin.com/car-photos/4f2c97d2-1d95-4061-a5d9-c15c86c5483f.png",
+    "name": "",
+    "removed": false
+  },
+  {
+    "id": 9943,
+    "documentType": "CAR_STICKER",
+    "documentStatus": "APPROVED",
+    "documentUrl": "https://s3.amazonaws.com/media-stage.rideaustin.com/documents/7d0be77e-18ed-46fb-8d17-0eb0b60eaddf.png?AWSAccessKeyId=AKIAJRZKPEUYYX2JFKEA&Expires=1489581819&Signature=rm2%2BUi5UEPC9E%2Fdq%2FWIXA7zMww4%3D",
+    "name": "Car sticker",
+    "removed": false
+  },
+  {
+    "id": 12308,
+    "documentType": "INSURANCE",
+    "documentStatus": "APPROVED",
+    "documentUrl": "https://s3.amazonaws.com/media-stage.rideaustin.com/driver-insurances/286f9d5b-5ca4-46de-b46e-3edacc6b7c36.png?AWSAccessKeyId=AKIAJRZKPEUYYX2JFKEA&Expires=1489581819&Signature=4bKghh4kVFpK6edwSnMLgO2V3M8%3D",
+    "name": "Car insurance",
+    "validityDate": "2017-03-23",
+    "removed": false
+  }
+]

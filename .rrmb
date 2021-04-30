@@ -1,0 +1,14 @@
+{
+	"paths": {
+		"componentsDir": "src/components/",
+		"containersDir": "src/containers/",
+		"pagesDir": "src/pages/",
+		"modulesDir": "src/modules/",
+		"testRootDir": "__test__/",
+		"routeFile": "src/routes.js",
+		"rootReducerPath": "src/reducer.js"
+	},
+	"options": {
+    "addPageRouteDefault": true
+	}
+}

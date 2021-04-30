@@ -1,0 +1,13 @@
+.payments {
+  @include mobile-down {
+    .react-datepicker__input-container {
+      width: 100%;
+    }
+    .payment-menu {
+      margin-top: 15px;
+    }
+  }
+  .react-datepicker__input-container {
+    display: block;
+  }
+}

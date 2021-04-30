@@ -1,0 +1,29 @@
+[
+  {
+    "id": 12161,
+    "documentType": "TNC_CARD",
+    "documentStatus": "APPROVED",
+    "documentUrl": "https://s3.amazonaws.com/media-stage.rideaustin.com/documents/fc807160-fbd9-4d2e-af87-66d77f408f85.png?AWSAccessKeyId=AKIAJRZKPEUYYX2JFKEA&Expires=1489580148&Signature=cGE99DHEIE0Sv1ZfeeexlC4bD%2Fw%3D",
+    "name": "TNC card - AUSTIN",
+    "cityId": 1,
+    "validityDate": "2017-02-24",
+    "removed": false
+  },
+  {
+    "id": 12309,
+    "documentType": "LICENSE",
+    "documentStatus": "APPROVED",
+    "documentUrl": "https://s3.amazonaws.com/media-stage.rideaustin.com/driver-licenses/6caef4cd-1f0a-48e1-8940-017ae73e5aa9.png?AWSAccessKeyId=AKIAJRZKPEUYYX2JFKEA&Expires=1489580148&Signature=CI6A5IRsIb4ISFUXL%2BkjwbfSkkc%3D",
+    "name": "Driving license",
+    "validityDate": "2017-03-19",
+    "removed": false
+  },
+  {
+    "id": 12546,
+    "documentType": "PHOTO",
+    "documentStatus": "PENDING",
+    "documentUrl": "http://media-stage.rideaustin.com/driver-photos/9b14b129-f219-4091-bfd3-3d85325dcf08.png",
+    "name": "Driver photo",
+    "removed": false
+  }
+]

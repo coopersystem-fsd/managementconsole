@@ -1,0 +1,71 @@
+.onboardingDetailModal {
+  $green: #1abc9c;
+  $light-green: #2ecc71;
+  $yellow: #f1c40f;
+  $red: #e74c3c;
+  $dark: #2c3e50;
+  $grey: #95a5a6;
+
+  .green {
+    color: $green;
+  }
+  .light-green {
+    color: $light-green;
+  }
+  .yellow {
+    color: $yellow;
+  }
+  .red {
+    color: $red;
+  }
+  .dark {
+    color: $dark;
+  }
+  .grey {
+    color: $grey;
+  }
+  .black-bg {
+    background: $grey;
+  }
+  .green-bg {
+    background: $green;
+  }
+  .light-green-bg {
+    background: $light-green;
+  }
+  .yellow-bg {
+    background: $yellow;
+  }
+  .red-bg {
+    background: $red;
+  }
+  .dark-bg {
+    background: $dark;
+  }
+  .grey-bg {
+    background: $grey;
+  }
+
+  width: 95%;
+  .upload-csv {
+    display: none;
+  }
+  .hotkeys {
+    div {
+      white-space: nowrap;
+    }
+  }
+  .onboarding-detail-header {
+    h3 {
+      display: inline-block;
+      margin-top: 5px;
+    }
+  }
+  .user-index {
+    cursor: default;
+    &:hover {
+      margin-top: 0px;
+      border-bottom-width: 4px;
+    }
+  }
+}

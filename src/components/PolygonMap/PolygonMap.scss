@@ -1,0 +1,11 @@
+.polygonMap {
+  .polygon-popover {
+    display: block;
+    width: 200px;
+    position: absolute;
+  }
+  img[src="https://maps.gstatic.com/mapfiles/api-3/images/mapcnt6.png"] {
+    display: none;
+    cursor: default;
+  }
+}

@@ -1,0 +1,155 @@
+.user {
+  $mobile: 480px;
+  $tablet: 768px;
+  $desktop: 1366px;
+  $xl: 1440px;
+
+  @mixin mobile {
+    @media (min-width: #{$mobile}) and (max-width: #{$tablet - 1px}) {
+      @content;
+    }
+  }
+
+  @mixin mobile-up {
+    @media (min-width: #{$mobile}) {
+      @content;
+    }
+  }
+
+  @mixin mobile-down {
+    @media (max-width: #{$mobile}) {
+      @content;
+    }
+  }
+
+  @mixin tablet {
+    @media (min-width: #{$tablet}) and (max-width: #{$desktop - 1px}) {
+      @content;
+    }
+  }
+
+  @mixin tablet-up {
+    @media (min-width: #{$tablet + 1px}) {
+      @content;
+    }
+  }
+
+  @mixin tablet-down {
+    @media (max-width: #{$tablet}) {
+      @content;
+    }
+  }
+
+  @mixin xl {
+    @media (min-width: #{$xl + 1px}) {
+      @content;
+    }
+  }
+
+  @include xl {
+    .top-box {
+      &.col-md-2 {
+        max-width: 215px;
+      }
+      &.col-md-3 {
+        max-width: 320px;
+      }
+      &.col-md-4 {
+        max-width: 400px;
+      }
+    }
+  }
+
+  .list-group {
+    position: relative;
+    strong {
+      position: absolute;
+      top: -11px;
+      left: 5px;
+      background: white;
+      padding: 0 5px;
+      font-weight: 400;
+      font-size: 1em;
+      small {
+        font-size: 100%;
+      }
+    }
+  }
+
+  .top-box {
+    .list-group-item {
+      min-height: 205px;
+      padding-top: 15px;
+    }
+    position: relative;
+    strong {
+      position: absolute;
+      top: -11px;
+      left: 5px;
+      background: white;
+      padding: 0 5px;
+      font-weight: 400;
+      font-size: 1em;
+      small {
+        font-size: 100%;
+      }
+    }
+  }
+  .user-tab-content {
+    min-height: 350px;
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 1px solid #cecece;
+    border-top-width: 0;
+  }
+
+  .nav-tabs>li.active>a, .nav-tabs>li.active>a:hover, .nav-tabs>li.active>a:focus {
+    border: 1px solid #cecece;
+    border-bottom-color: white;
+  }
+
+  .nav-tabs>li>a {
+    border-color: #cecece;
+  }
+
+  .nav-tabs {
+    border-bottom: 1px solid #cecece;
+  }
+
+  .user-picture {
+    .picture-wrapper {
+      text-align: center;
+      margin-bottom: 3px;
+      height: 145px;
+      a {
+        display: block;
+        height: 100%;
+        img {
+          height: 100%;
+          width: auto;
+        }
+      }
+    }
+  }
+  .user-onboarding-status {
+    .status-list {
+      height: 165px;
+      overflow: auto;
+    }
+  }
+  .cars {
+    .tnc-card {
+      position: relative;
+      .tnc-card-label {
+        position: absolute;
+        top: -11px;
+        left: 5px;
+        background: white;
+        padding: 0 5px;
+      }
+    }
+  }
+  textarea {
+    resize: none;
+  }
+}

@@ -1,0 +1,16 @@
+.options-list {
+  .list-group-item {
+    padding: 0;
+    .list-unstyled {
+      li {
+        padding: 3px 10px;
+        color: #999999;
+        white-space: nowrap;
+        &:hover {
+          color: black;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,27 @@
+.reports {
+  @include mobile-down {
+    .react-datepicker__input-container {
+      width: 100%;
+      &:nth-of-type(1) {
+        margin-bottom:15px;
+      }
+    }
+    .timezone-actions, .zipcode-select, .total-csv-btn, .drivers-csv-btn {
+      margin-top: 15px!important;
+    }
+    .total-csv-btn {
+      padding: 0 15px!important;
+    }
+  }
+  .total-csv-btn {
+    padding: 0;
+  }
+  .timezone-actions, .zipcode-select, .total-csv-btn, .drivers-csv-btn {
+    margin-top: 22px;
+  }
+  .width100p {
+    .form-control {
+      width: 100%;
+    }
+  }
+}

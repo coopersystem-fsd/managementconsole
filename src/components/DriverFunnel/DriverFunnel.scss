@@ -1,0 +1,230 @@
+.driverFunnel {
+
+  $mobile: 480px;
+  $tablet: 768px;
+  $desktop: 1366px;
+  $xl: 2000px;
+
+  @mixin desktop {
+    @media (min-width: #{$desktop}) {
+      @content;
+    }
+  }
+
+  @mixin xl {
+    @media (min-width: #{$xl}) {
+      @content;
+    }
+  }
+
+  $green: #1abc9c;
+  $light-green: #2ecc71;
+  $yellow: #f1c40f;
+  $red: #e74c3c;
+  $dark: #2c3e50;
+  $grey: #95a5a6;
+
+  .green {
+    color: $green;
+  }
+  .light-green {
+    color: $light-green;
+  }
+  .yellow {
+    color: $yellow;
+  }
+  .red {
+    color: $red;
+  }
+  .dark {
+    color: $dark;
+  }
+  .grey {
+    color: $grey;
+  }
+  .black-bg {
+    background: $grey;
+  }
+  .green-bg {
+    background: $green;
+  }
+  .light-green-bg {
+    background: $light-green;
+  }
+  .yellow-bg {
+    background: $yellow;
+  }
+  .red-bg {
+    background: $red;
+  }
+  .dark-bg {
+    background: $dark;
+  }
+  .grey-bg {
+    background: $grey;
+  }
+
+  .valign-middle {
+    vertical-align: middle;
+  }
+
+  .circle {
+    position: relative;
+    border-radius: 50%;
+    width: 100%;
+    height: auto;
+    padding-top: 100%;
+    background: white;
+  }
+
+  .funnel {
+    >div {
+      padding-left: 0;
+      padding-right: 0;
+    }
+    .funnel-stack {
+      color: white;
+      position: relative;
+      border-radius: 50%;
+      width: 100%;
+      height: auto;
+      padding-top: 100%;
+      background: white;
+      margin-bottom: 10px;
+      cursor: pointer;
+      a {
+        color: white;
+      }
+      .funnel-text-wrapper {
+        position: absolute;
+        text-align: center;
+        width: 100%;
+        top: calc(50% - 20px);
+        left: 0;
+      }
+    }
+    @include xl {
+      .funnel-stack {
+        .funnel-text-wrapper {
+        }
+      }
+    }
+  }
+
+  .filter {
+    padding-left: 5px;
+    padding-right: 5px;
+    .filter-name {
+      text-overflow: ellipsis;
+      display: block;
+      width: 100%;
+      overflow: hidden;
+      position: relative;
+      .name {
+        white-space: nowrap;
+      }
+    }
+    @include desktop {
+      &:nth-of-type(6n+6) {
+        margin-bottom: 1px;
+      }
+    }
+
+    .dropdown {
+      display: block;
+      .dropdown-title {
+        text-overflow: ellipsis;
+        display: block;
+        width: 100%;
+        overflow: hidden;
+        padding-right: 10px;
+      }
+      button {
+        text-align: left;
+        text-transform: initial;
+        font-weight: 400;
+      }
+      .caret {
+        position: absolute;
+        right: 10px;
+        top: 50%;
+      }
+      .dropdown-menu {
+        li {
+          a {
+            position: relative;
+            .fa {
+              position: absolute;
+              right: 10px;
+              top: calc(50% - 6px);
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .driver-funnel-table {
+    .email-button {
+      display: none;
+    }
+    .btn-link {
+      padding: 0;
+      border-width: 0;
+      margin: 0;
+    }
+    .selected-row {
+      .email-button {
+        display: inline-block;
+      }
+      .btn-link {
+        padding: 0;
+        border-width: 0;
+        margin: 0;
+        .dropdown-title {
+          color: white;
+        }
+      }
+      .dropdown-menu {
+        li {
+          &.active {
+            a {
+              color: white;
+            }
+          }
+          a {
+            &:hover {
+              color: #333333;
+            }
+            color: #999999;
+          }
+        }
+      }
+    }
+    .dropdown {
+      button {
+        text-align: left;
+        text-transform: initial;
+        font-weight: 400;
+      }
+    }
+    .car-select-group {
+      .car-select {
+        .car-photo-title {
+          display: none;
+        }
+        &:nth-of-type(1) {
+          .car-photo-title {
+            display: block;
+          }
+        }
+      }
+    }
+  }
+}
+
+.changelog {
+  .changelog-list {
+    font-family: monospace;
+  }
+}

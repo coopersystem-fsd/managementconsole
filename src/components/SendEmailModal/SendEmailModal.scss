@@ -1,0 +1,23 @@
+.sendEmailModal {
+  &.large {
+    width: 95%;
+  }
+  .preview {
+    width: 100%;
+    height: 60vh;
+  }
+  .editor {
+    min-height: 80px;
+    border: 1px solid #F1F1F1;
+  }
+  .rdw-editor-main {
+    width: inherit;
+  }
+  .rdw-option-wrapper {
+    min-width: 33px;
+    height: 29px;
+  }
+  .public-DraftStyleDefault-block {
+    margin: 10px;
+  }
+}

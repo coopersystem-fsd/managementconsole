@@ -1,0 +1,272 @@
+.real-time-tracking {
+
+  @import 'styles/_flexbox';
+
+  $tablet: "(min-width: 768px) and (max-width: 1023px)";
+  $desktop: "(min-width: 1024px)";
+
+  $border : #e0e0e0;
+  $mute: rgb(136,139,143);
+  $black: rgb(60,67,80);
+  $thinFont: Lato,"Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
+
+  color: $black;
+  font-family: 'Montserrat', sans-serif;
+
+  .mute {
+    color: $mute;
+  }
+
+  .red {
+    color: red;
+  }
+
+  .thin {
+    font-family: $thinFont;
+    font-weight: 300;
+  }
+
+  .gm-svpc, .gm-style-mtc {
+    display: none;
+  }
+
+  .ellipis {
+    overflow: hidden;
+    -ms-text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    display: block;
+    white-space: nowrap;
+  }
+
+  .map-render {
+    opacity:0;
+  }
+
+  // Roating car icon in course direction
+  @for $i from 1 through 360 {
+    [src^='https://media.rideaustin.com/images/carIcon_n.png?rotate=#{$i}'] {
+      -ms-transform: rotate(#{$i}deg); /* IE 9 */
+      -webkit-transform: rotate(#{$i}deg); /* Chrome, Safari, Opera */
+      transform: rotate(#{$i}deg);
+    }
+  }
+
+  header {
+    background: black;
+    z-index: 100000;
+    position: relative;
+    padding: 10px;
+    text-align: center;
+  }
+  @media #{$desktop} {
+    .info-box {
+      width: 500px!important;
+      left: 15px!important;
+    }
+  }
+  .info-box {
+    &.maximized, &.minimized {
+      .changeSize {
+        cursor: pointer;
+        position: absolute;
+        bottom: -15px;
+        left: calc(50% - 15px);
+        padding: 12px 10px;
+        border-radius: 50%;
+        text-align: center;
+        background: white;
+      }
+    }
+    &.maximized {
+      .changeSize {
+        .arrow {
+          width: 0;
+          height: 0;
+          border-left: 5px solid transparent;
+          border-right: 5px solid transparent;
+
+          border-bottom: 5px solid black;
+        }
+      }
+    }
+    &.minimized {
+      .inner {
+        height: 62px;
+        overflow: hidden;
+      }
+      .changeSize {
+        .arrow {
+          width: 0;
+          height: 0;
+          border-left: 5px solid transparent;
+          border-right: 5px solid transparent;
+          border-top: 5px solid black;
+        }
+      }
+
+    }
+    position: absolute;
+    z-index: 100000;
+    top: 75px;
+    width: 90%;
+    background: white;
+    left: 5%;
+    box-shadow: 0 0 5px 0px rgba(0,0,0,0.2);
+    border-radius: 2px;
+
+    .rider, .driver {
+      padding: 0;
+      .inner {
+        padding: 10px;
+        @include flexbox();
+      }
+      .photo {
+        img {
+          width:42px;
+          height:42px;
+        }
+        margin-right: 10px;
+      }
+      .info {
+        @include flex-grow(1);
+        .name {
+          font-size: 14px;
+          font-weight: bold;
+          display: inline-block;
+        }
+        .status {
+          display: block;
+          margin-bottom: 25px;
+          font-family: 'lato', sans-serif;
+        }
+      }
+    }
+
+    .driver {
+      margin-bottom: 10px;
+      .row-2 {
+        margin-top: 10px;
+      }
+      .rating {
+        display: inline-block;
+        .item {
+          padding: 10px;
+          padding: 2px 10px;
+          border: 1px solid $border;
+          border-radius: 4px;
+          vertical-align: middle;
+          display: inline-block;
+
+        }
+        .number {
+          border-right-width: 1px;
+          border-radius: 4px 0 0 4px;
+          padding: 2px 15px;
+        }
+        .star {
+          border-left-width: 0;
+          border-radius: 0 4px 4px 0;
+          img {
+            width: 12px;
+            vertical-align: baseline;
+          }
+
+        }
+      }
+      .licence-plate {
+        padding: 10px;
+        padding: 2px 15px;
+        border: 1px solid $border;
+        border-radius: 4px;
+        vertical-align: middle;
+        display: inline-block;
+        float:right;
+      }
+    }
+
+    .rider {
+      padding-bottom: 10px;
+      margin-bottom: 10px;
+      border-bottom: 2px solid $border;
+      .duration {
+        position: absolute;
+        right: 10px;
+        top: 0;
+        text-align: center;
+        .eta {
+
+        }
+        .number {
+          font-size: 24px;
+          display: block;
+          line-height: 18px;
+          font-weight: bold;
+        }
+        .minutes {
+          color:$mute;
+          display: block;
+        }
+      }
+      .directions {
+          position: relative;
+          .grey-line {
+            background: $border;
+            position: absolute;
+            width: 1px;
+            height: calc(100% - 10px);
+            left: 6px;
+            top: 5px;
+            z-index: 1;
+          }
+          .dot {
+            width: 13px;
+            height: 13px;
+            display: inline-block;
+            vertical-align: text-top;
+            border-radius: 50px;
+            margin-right: 10px;
+          }
+          .green-dot {
+            background: #50ae55;
+            box-shadow: 0 0 0 1px #50ae55;
+            border: 3px solid white;
+            margin-bottom: 5px;
+          }
+          .red-dot {
+            background: #f1453d;
+            box-shadow: 0 0 0 1px #f1453d;
+            border: 3px solid white;
+          }
+        .direction {
+          position: relative;
+          z-index: 2;
+          .address {
+            width:85%;
+            vertical-align: sub;
+            display: inline-block;
+          }
+        }
+      }
+    }
+
+  }
+  .loading {
+    position: absolute;
+    top: 50%;
+    left:50%;
+    margin-left: -110px;
+    margin-top: -30px;
+    div {
+      width: 250px;
+      height: 32px;
+      margin: auto;
+      background-repeat: no-repeat;
+      padding-left: 40px;
+      span {
+        display: inline-block;
+        line-height: 30px;
+      }
+    }
+  }
+}

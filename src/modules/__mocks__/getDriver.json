@@ -1,0 +1,99 @@
+{
+  "id": 3610,
+  "user": {
+    "id": 2715,
+    "email": "md2@hatak.com",
+    "firstname": "Maciej",
+    "lastname": "Pp",
+    "phoneNumber": "+48698659251",
+    "phoneNumberVerified": true,
+    "address": {
+      "address": "Austin, TX 78745, USA",
+      "zipCode": "78745"
+    },
+    "dateOfBirth": "1996-03-16",
+    "gender": "UNKNOWN",
+    "fullName": "Maciej Pp",
+    "uuid": "2715",
+    "enabled": true,
+    "avatars": [
+      {
+        "id": 3609,
+        "type": "RIDER",
+        "active": true
+      },
+      {
+        "id": 3610,
+        "type": "DRIVER",
+        "active": false
+      }
+    ],
+    "active": true
+  },
+  "active": false,
+  "lastLoginDate": 1489744046000,
+  "agreementDate": "2017-03-17 09:51:20",
+  "ssn": "XXXXX6865",
+  "licenseNumber": "DJDJCMXMD",
+  "licensePictureUrl": "https://s3.amazonaws.com/media-stage.rideaustin.com/driver-licenses/2b4407ae-1dd6-47c9-8231-5bddbc79d4ba.png?AWSAccessKeyId=AKIAJRZKPEUYYX2JFKEA&Expires=1489747289&Signature=kLRFBfQFSOGdYcKkJvphzFqHJoM%3D",
+  "licenseExpiryDate": "2018-07-18",
+  "licenseState": "TX",
+  "cars": [
+    {
+      "id": 1244,
+      "color": "White",
+      "license": "JDJDJDMD",
+      "make": "Volvo",
+      "model": "XC70",
+      "year": "2016",
+      "insuranceExpiryDate": "2018-02-08",
+      "insurancePictureUrl": "https://s3.amazonaws.com/media-stage.rideaustin.com/driver-insurances/b051a4b7-2920-44cc-8dab-ec5289f0d1ae.png?AWSAccessKeyId=AKIAJRZKPEUYYX2JFKEA&Expires=1489747289&Signature=DiwChzSGnv5qXTpSHynQO7cW%2B6U%3D",
+      "photoUrl": "http://media-stage.rideaustin.com/car-photos/eea3d367-9eab-4158-8f05-d5bb6feb2616.png",
+      "selected": true,
+      "inspectionStatus": "NOT_INSPECTED",
+      "removed": false,
+      "carCategories": [
+        "REGULAR"
+      ],
+      "inspectionSticker": false,
+      "uuid": "1244"
+    }
+  ],
+  "rating": 5,
+  "payoneerId": "3610",
+  "payoneerStatus": "Inactive",
+  "payoneerSignupUrl": "https://payouts.sandbox.payoneer.com/partners/lp.aspx?token=87b637f3930f4313b35eeaf42365bc45F9AED0D1B9",
+  "checkrId": "5150d504d29388e128dc78a7",
+  "checkrStatus": "PENDING",
+  "photoUrl": "http://media-stage.rideaustin.com/driver-photos/9a77ff85-195d-4eba-b548-3b8232945aaa.png",
+  "agreedToLegalTerms": true,
+  "fingerprintCleared": false,
+  "cityApprovalStatus": "PENDING",
+  "activationStatus": "INACTIVE",
+  "onboardingStatus": "PENDING",
+  "onboardingPendingSince": 1489744280000,
+  "grantedDriverTypes": [],
+  "cityId": 1,
+  "enabledRequestTypes": [],
+  "type": "DRIVER",
+  "email": "md2@hatak.com",
+  "gender": "UNKNOWN",
+  "firstname": "Maciej",
+  "lastname": "Pp",
+  "phoneNumber": "+48698659251",
+  "fullName": "Maciej Pp",
+  "uuid": "3610",
+  "checkrReports": [
+    {
+      "id": "edfc1172ca3ea099d13a0359",
+      "status": "PENDING",
+      "createdDate": 1489744288000,
+      "restrictionsCount": 0,
+      "violationsCount": 0,
+      "accidentsCount": 0,
+      "firstName": "Maciej",
+      "lastName": "Pp",
+      "dateOfBirth": "1996-03-16"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+.paginatedTable {
+  margin-bottom: 15px;
+  .pagination-wrapper {
+    &.top {
+      margin-bottom: 10px;
+    }
+    &.bottom {
+      margin-top: 10px;
+    }
+    .pagination-info {
+      display: inline-block;
+      vertical-align: middle;
+    }
+    .pagination {
+      display: inline-block;
+      margin: 0 10px 0 0;
+      vertical-align: middle;
+    }
+  }
+  .table {
+    margin-bottom: 0;
+  }
+}

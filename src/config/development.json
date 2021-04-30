@@ -1,0 +1,13 @@
+{
+  "api": {
+    "dev_local": "http://localhost:8080/app/rest/",
+    "dev": "https://api-dev.rideaustin.com/rest/",
+    "feature": "https://api-feature.rideaustin.com/rest/",
+    "load-testing": "https://api-load-testing.rideaustin.com/rest/",
+    "media_url": "https://media-stage.rideaustin.com/",
+    "production": "https://api.rideaustin.com/rest/",
+    "rc-backup": "http://api-rc-backup.rideaustin.com/rest/",
+    "rc": "https://api-rc.rideaustin.com/rest/",
+    "stage": "https://api-stage.rideaustin.com/rest/"
+  }
+}

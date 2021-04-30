@@ -1,0 +1,22 @@
+.surgePricing {
+  .polygon-table {
+    tr th, tr td {
+      &:nth-of-type(1) {
+        display: none;
+      }
+    }
+  }
+}
+
+.row-no-padding {
+  [class*="col-"] {
+    padding-left: 8px !important;
+    padding-right: 0 !important;
+  }
+}
+
+.actual-mode {
+  padding-left: 10px !important;
+}
+
+

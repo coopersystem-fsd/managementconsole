@@ -1,0 +1,149 @@
+{
+  "id": 85,
+  "user": {
+    "id": 62,
+    "email": "test2@xo.com",
+    "firstname": "Alex",
+    "middleName": "",
+    "lastname": "Stelea",
+    "nickName": "",
+    "phoneNumber": "701234567",
+    "phoneNumberVerified": true,
+    "address": {
+      "address": "10600 Zeus Cove Austin, TX 78759, US",
+      "zipCode": "11111"
+    },
+    "dateOfBirth": "1988-10-29",
+    "gender": "UNKNOWN",
+    "fullName": "Alex Stelea",
+    "uuid": "62",
+    "enabled": true,
+    "avatars": [
+      {
+        "id": 84,
+        "type": "RIDER",
+        "active": true
+      },
+      {
+        "id": 85,
+        "type": "DRIVER",
+        "active": true
+      }
+    ],
+    "active": true
+  },
+  "active": true,
+  "lastLoginDate": 1488108600000,
+  "ratingAverage": 4.78,
+  "agreementDate": "2016-06-16 14:04:09",
+  "ssn": "XXXXXXX2001",
+  "licenseNumber": "F1112001",
+  "licensePictureUrl": "https://s3.amazonaws.com/media-stage.rideaustin.com/driver-licenses/6caef4cd-1f0a-48e1-8940-017ae73e5aa9.png?AWSAccessKeyId=AKIAJRZKPEUYYX2JFKEA&Expires=1489582451&Signature=m9JYh5OBT%2B8lFGEvL%2BH1FBS6%2B1Y%3D",
+  "licenseExpiryDate": "2017-03-19",
+  "licenseState": "CA",
+  "cars": [
+    {
+      "id": 465,
+      "color": "Black",
+      "license": "111",
+      "make": "Cresta",
+      "model": "N typy",
+      "year": "2016",
+      "insuranceExpiryDate": "2017-03-23",
+      "insurancePictureUrl": "https://s3.amazonaws.com/media-stage.rideaustin.com/driver-insurances/286f9d5b-5ca4-46de-b46e-3edacc6b7c36.png?AWSAccessKeyId=AKIAJRZKPEUYYX2JFKEA&Expires=1489582451&Signature=yIzVr7cgC8fyjOWEjGRF8TdhTf0%3D",
+      "photoUrl": "http://media-stage.rideaustin.com/car-photos/78a0fa9c-dc17-4b5b-a822-5c7ad95f90b1.png",
+      "selected": false,
+      "inspectionStatus": "APPROVED",
+      "inspectionNotes": "saddsa",
+      "removed": false,
+      "carCategories": [
+        "PREMIUM"
+      ],
+      "inspectionSticker": false,
+      "uuid": "465"
+    },
+    {
+      "id": 22,
+      "color": "Black",
+      "license": "ADD1231234566",
+      "make": "Cadillac",
+      "model": "XT7",
+      "year": "2018",
+      "selected": false,
+      "inspectionStatus": "REJECTED",
+      "removed": true,
+      "carCategories": [
+        "REGULAR",
+        "SUV",
+        "PREMIUM",
+        "LUXURY"
+      ],
+      "inspectionSticker": false,
+      "uuid": "22"
+    },
+    {
+      "id": 1066,
+      "color": "Silver",
+      "license": "111",
+      "make": "Tesla",
+      "model": "3",
+      "year": "2017",
+      "insurancePictureUrl": "https://s3.amazonaws.com/media-stage.rideaustin.com/driver-insurances/5e9ee6a0-4192-4ec7-a971-e238980a2f83.png?AWSAccessKeyId=AKIAJRZKPEUYYX2JFKEA&Expires=1489582451&Signature=xyjW035C9RVYnOWItnKdzlzOqhA%3D",
+      "photoUrl": "http://media-stage.rideaustin.com/car-photos/3683dda9-25b3-4666-afdd-24d9aabbba9b.png",
+      "selected": true,
+      "inspectionStatus": "APPROVED",
+      "inspectionNotes": "heya\n",
+      "removed": false,
+      "carCategories": [
+        "REGULAR"
+      ],
+      "inspectionSticker": false,
+      "uuid": "1066"
+    }
+  ],
+  "rating": 5,
+  "payoneerId": "0",
+  "payoneerStatus": "Active",
+  "payoneerSignupUrl": "https://payouts.sandbox.payoneer.com/partners/lp.aspx?token=820ede49f69c4e4288aa2ea41291b409829CB07F8C",
+  "checkrId": "4ed337c5a803da2187fc26b5",
+  "checkrStatus": "CLEAR",
+  "checkrStatusNotes": "122",
+  "photoUrl": "http://media-stage.rideaustin.com/driver-photos/9b14b129-f219-4091-bfd3-3d85325dcf08.png",
+  "activationDate": "2017-03-09",
+  "agreedToLegalTerms": true,
+  "fingerprintCleared": false,
+  "cityApprovalStatus": "PENDING",
+  "activationStatus": "ACTIVE",
+  "activationNotes": "some notes here",
+  "onboardingStatus": "PENDING",
+  "onboardingPendingSince": 1489486980000,
+  "grantedDriverTypes": [
+    "WOMEN_ONLY"
+  ],
+  "cityId": 1,
+  "enabledRequestTypes": [],
+  "type": "DRIVER",
+  "email": "test2@xo.com",
+  "gender": "UNKNOWN",
+  "firstname": "Alex",
+  "lastname": "Stelea",
+  "phoneNumber": "701234567",
+  "fullName": "Alex Stelea",
+  "uuid": "85",
+  "checkrReports": [
+    {
+      "id": "83b100e07ebf1d8ed9f523e4",
+      "status": "CLEAR",
+      "createdDate": 1488375691000,
+      "licenseStatus": "valid",
+      "licenseIssuedDate": 1333929600000,
+      "restrictionsCount": 0,
+      "violationsCount": 0,
+      "accidentsCount": 0,
+      "firstName": "Alex",
+      "middleName": "D",
+      "lastName": "Stelea",
+      "dateOfBirth": "1988-10-20"
+    }
+  ]
+}

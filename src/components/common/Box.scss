@@ -1,0 +1,13 @@
+.box {
+  position: relative;
+  .list-group-item {
+    padding-top: 15px;
+  }
+  .box-title {
+      position: absolute;
+      top: -11px;
+      left: 5px;
+      background: white;
+      padding: 0 5px;
+  }
+}

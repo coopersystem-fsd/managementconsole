@@ -1,0 +1,17 @@
+.notifications {
+  position: fixed;
+  z-index: 10000;
+  right: 0;
+  width: 100%;
+  text-align: center;
+  top: 10px;
+  .alert {
+    display: inline-block;
+    padding: 15px 20px;
+    box-shadow: 0 25px 10px -15px rgba(0,0,0,0.05);
+    border-width: 0;
+    .glyphicon-remove {
+      margin-left: 20px;
+    }
+  }
+}

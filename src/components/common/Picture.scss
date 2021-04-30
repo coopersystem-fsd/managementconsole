@@ -1,0 +1,64 @@
+.picture {
+  .picture-label {
+    position: absolute;
+    top: -11px;
+    left: 5px;
+    background: white;
+    padding: 0 5px;
+  }
+  .hidden-file {
+   width: 0px;
+   height: 0px;
+   overflow: hidden;
+  }
+  button {
+    &:hover, &:active {
+      border-bottom-width: 4px;
+    }
+  }
+  .picture-wrapper {
+    .placeholder {
+      position: absolute;
+      font-size: 56px;
+      left: calc(50% - 30px);
+      top: calc(50% - 50px);
+      color: #eeeeee;
+      opacity: 0.8;
+      z-index: 1;
+    }
+    .image {
+      img {
+        position: relative;
+        z-index: 2;
+        margin: auto;
+      }
+    }
+  }
+  &.small {
+    font-size: 1em;
+    .picture-wrapper {
+      height: 100px;
+      min-height: auto;
+      min-width: auto;
+      margin-bottom: 10px;
+      margin-top: 5px;
+      img {
+        height: 100px;
+        width: auto;
+      }
+    }
+  }
+  &.regular {
+    .picture-wrapper {
+      min-height: 230px;
+      min-width: 230px;
+      .image {
+        img {
+          height: 230px;
+          width: 230px;
+        }
+      }
+    }
+  }
+
+}
