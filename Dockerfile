@@ -1,4 +1,4 @@
-FROM node:12.18-alpine
+FROM node:12.18-alpine as node
 WORKDIR /usr/src/app
 COPY package.json ./
 RUN npm install --silent
@@ -8,5 +8,5 @@ RUN npm run build
 
 FROM nginx
 COPY nginx.vh.default.conf /etc/nginx/conf.d/default.conf
-COPY dist /usr/share/nginx/html
+COPY --from=node /usr/src/app/dist /usr/share/nginx/html
 EXPOSE 80
