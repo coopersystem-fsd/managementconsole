@@ -87,7 +87,8 @@ const data = {
       { value: 'REJECTED', name: 'Rejected' },
     ],
     apis: [
-      {id: 'api-dev', name: 'Dev API', url: 'https://api-dev.rideaustin.com/rest/'},
+      // {id: 'api-dev', name: 'Dev API', url: 'https://api-dev.rideaustin.com/rest/'},
+      {id: 'api-dev', name: 'Dev API Cooper', url: 'https://dev.api.rideaustin.coopersystem.com.br/rest/'},
       {id: 'api-load-testing', name: 'LoadTesting API', url: 'https://api-load-testing.rideaustin.com/rest/'},
       {id: 'api-rc', name: 'RC API', url: 'https://api-rc.rideaustin.com/rest/'},
       {id: 'api-stage', name: 'Stage API', url: 'https://api-stage.rideaustin.com/rest/'},
